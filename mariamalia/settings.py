@@ -1,5 +1,6 @@
 import os
 from django.contrib import admin
+import dj_database_url
 
 # Admin site name and header
 admin.site.site_title = 'MariaMalia | Admin'
@@ -81,17 +82,17 @@ WSGI_APPLICATION = 'mariamalia.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.0/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mariamalia',
-        'USER': 'marie0901',
-        'PASSWORD': 'luka0901',
-        'HOST': 'localhost',
-        'PORT': '',
-    }
-}
-
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'mariamalia',
+#         'USER': 'marie0901',
+#         'PASSWORD': 'luka0901',
+#         'HOST': 'localhost',
+#         'PORT': '',
+#     }
+# }
+DATABASES = {'default': dj_database_url.config(default='postgres://localhost')}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.0/ref/settings/#auth-password-validators
