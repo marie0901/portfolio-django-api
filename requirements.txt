@@ -5,3 +5,4 @@ django-pygments==0.1
 django-markdownx==2.0.22
 markdown2==2.3.5
 gunicorn==19.6.0
+psycopg2==2.4.4
