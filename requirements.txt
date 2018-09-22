@@ -7,3 +7,4 @@ markdown2==2.3.5
 gunicorn==19.6.0
 psycopg2==2.7.4
 dj_database_url
+whitenoise==4.1
